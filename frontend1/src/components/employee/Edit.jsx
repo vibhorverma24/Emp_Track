@@ -26,7 +26,7 @@ const Edit = () => {
     useEffect(() => {
         const fetchEmployee = async() => {
             try{
-                const response = await axios.get(`http://localhost:3000/api/employee/${id}`, {
+                const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/employee/${id}`, {
                     headers: {
                         "Authorization" : `Bearer ${localStorage.getItem('token')}` 
                     }
@@ -60,7 +60,7 @@ const Edit = () => {
         e.preventDefault()
 
         try {
-            const response = await axios.put(`http://localhost:3000/api/employee/${id}`, 
+            const response = await axios.put(`https://gg-ten-cyan.vercel.app/api/employee/${id}`, 
             employee, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`

@@ -11,7 +11,7 @@
 
 //     const fetchSalaries = async()=>{
 //             try{
-//                 const response = await axios.get(`http://localhost:3000/api/leave/${id}/${user.role}`,{
+//                 const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/leave/${id}/${user.role}`,{
 //                     headers: {
 //                         Authorization: `Bearer ${localStorage.getItem("token")}`,
 //                     },
@@ -106,7 +106,7 @@ const List = () => {
   const fetchSalaries = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/leave/${id}/${user.role}`,
+        `https://gg-ten-cyan.vercel.app/api/leave/${id}/${user.role}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

@@ -10,7 +10,7 @@ const View = () => {
     useEffect(() => {
         const fetchEmployee = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/employee/${id}`, {
+                const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/employee/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -49,7 +49,7 @@ const View = () => {
                     </div> */}
                     {employee.userId.profileImage ? (
                         <img
-                            src={`http://localhost:3000/${employee.userId.profileImage}`}
+                            src={`https://gg-ten-cyan.vercel.app/${employee.userId.profileImage}`}
                             alt="Profile"
                             className="w-32 h-32 rounded-full object-cover border-2 border-gray-300 shadow"
                         />
@@ -107,7 +107,7 @@ export default View;
 //     useEffect(() => {
 //         const fetchEmployee = async () => {
 //             try {
-//                 const response = await axios.get(`http://localhost:3000/api/employee/${id}`, {
+//                 const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/employee/${id}`, {
 //                     headers: {
 //                         "Authorization": `Bearer ${localStorage.getItem('token')}`
 //                     }
@@ -137,7 +137,7 @@ export default View;
 //             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 //                 <div>
 //                     <img
-//                         src={`http://localhost:3000/${employee?.userId?.profileImage}`}
+//                         src={`https://gg-ten-cyan.vercel.app/${employee?.userId?.profileImage}`}
 //                         className="rounded-full border w-72"
 //                         alt="Profile"
 //                     />

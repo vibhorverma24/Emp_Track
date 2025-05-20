@@ -13,7 +13,7 @@ const Signup = () => {
         try {
             console.log("Request going...");
 
-            const response = await axios.post("http://localhost:3000/api/auth/register", {
+            const response = await axios.post("https://gg-ten-cyan.vercel.app/api/auth/register", {
                 name,
                 email,
                 password,

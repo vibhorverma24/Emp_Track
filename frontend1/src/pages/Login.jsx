@@ -18,7 +18,7 @@
 
 //         try {
 //             const response = await axios.post(
-//                 "http://localhost:3000/api/auth/login",
+//                 "https://gg-ten-cyan.vercel.app/api/auth/login",
 //                 { email, password },
 //                 {
 //                     headers: {
@@ -156,7 +156,7 @@ const AuthForms = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:3000/api/auth/login",
+                "https://gg-ten-cyan.vercel.app/api/auth/login",
                 { email, password },
                 {
                     headers: {
@@ -201,7 +201,7 @@ const AuthForms = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:3000/api/auth/register",
+                "https://gg-ten-cyan.vercel.app/api/auth/register",
                 { name, email, password },
                 {
                     headers: {

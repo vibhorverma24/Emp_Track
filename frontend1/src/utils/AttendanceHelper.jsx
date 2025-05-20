@@ -36,7 +36,7 @@ export const columns = [
 export const AttendanceHelper = ({status,employeeId,statusChange}) => {
     const markEmployee = async(status,employeeId) => {
         const formattedStatus = status.charAt(0).toUpperCase() + status.slice(1).toLowerCase();
-        const response = await axios.put(`http://localhost:3000/api/attendance/update/${employeeId}`,{status: formattedStatus},{
+        const response = await axios.put(`https://gg-ten-cyan.vercel.app/api/attendance/update/${employeeId}`,{status: formattedStatus},{
             headers: {
                 "Authorization": `Bearer ${localStorage.getItem('token')}`
             }

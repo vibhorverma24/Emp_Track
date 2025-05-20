@@ -17,7 +17,7 @@ const AddDepartment = () => {
     const handleSubmit = async(e) => {
         e.preventDefault()
         try{
-            const response = await axios.post('http://localhost:3000/api/department/add', department, {
+            const response = await axios.post('https://gg-ten-cyan.vercel.app/api/department/add', department, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }
