@@ -19,6 +19,9 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(express.static('public/uploads'))
+app.get("/", (req, res) => {
+    res.send("bchfbv");
+})
 app.use('/api/dashboard', dashboardRouter)
 app.use('/api/auth', authRouter)
 app.use('/api/department',departmentRouter)
