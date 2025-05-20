@@ -31,7 +31,7 @@ const Setting = () => {
 
     try {
       const response = await axios.put(
-        "https://gg-ten-cyan.vercel.app/api/setting/change-password",
+        "https://gg-wb8q.onrender.com/api/setting/change-password",
         setting,
         {
           headers: {

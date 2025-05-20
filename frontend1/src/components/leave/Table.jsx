@@ -10,7 +10,7 @@ const Table = ()=>{
     const [filteredLeaves, setFilteredLeaves] = useState([]);
     const fetchLeaves = async()=>{
         try {
-            const response = await axios.get('https://gg-ten-cyan.vercel.app/api/leave', {
+            const response = await axios.get('https://gg-wb8q.onrender.com/api/leave', {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

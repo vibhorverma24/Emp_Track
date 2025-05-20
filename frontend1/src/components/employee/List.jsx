@@ -13,7 +13,7 @@ const List = () => {
         const fetchEmployees = async () => {
             setEmpLoading(true);
             try {
-                const response = await axios.get('https://gg-ten-cyan.vercel.app/api/employee', {
+                const response = await axios.get('https://gg-wb8q.onrender.com/api/employee', {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -31,7 +31,7 @@ const List = () => {
                             <img
                                 width={40}
                                 className='rounded-full'
-                                src={`https://gg-ten-cyan.vercel.app/${emp.userId.profileImage}`}
+                                src={`https://gg-wb8q.onrender.com/${emp.userId.profileImage}`}
                                 alt="profile"
                             />
                         ),

@@ -12,7 +12,7 @@
 
 //     const fetchSalaries = async()=>{
 //         try{
-//             const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/salary/${id}/${user.role}`,{
+//             const response = await axios.get(`https://gg-wb8q.onrender.com/api/salary/${id}/${user.role}`,{
 //                 headers: {
 //                     Authorization: `Bearer ${localStorage.getItem("token")}`,
 //                 },
@@ -120,7 +120,7 @@ const View = () => {
     const fetchSalaries = async () => {
         try {
             const response = await axios.get(
-                `https://gg-ten-cyan.vercel.app/api/salary/${id}/${user.role}`,
+                `https://gg-wb8q.onrender.com/api/salary/${id}/${user.role}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`,

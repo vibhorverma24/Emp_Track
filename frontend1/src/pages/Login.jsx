@@ -18,7 +18,7 @@
 
 //         try {
 //             const response = await axios.post(
-//                 "https://gg-ten-cyan.vercel.app/api/auth/login",
+//                 "https://gg-wb8q.onrender.com/api/auth/login",
 //                 { email, password },
 //                 {
 //                     headers: {
@@ -156,7 +156,7 @@ const AuthForms = () => {
 
         try {
             const response = await axios.post(
-                "https://gg-ten-cyan.vercel.app/api/auth/login",
+                "https://gg-wb8q.onrender.com/api/auth/login",
                 { email, password },
                 {
                     headers: {
@@ -201,7 +201,7 @@ const AuthForms = () => {
 
         try {
             const response = await axios.post(
-                "https://gg-ten-cyan.vercel.app/api/auth/register",
+                "https://gg-wb8q.onrender.com/api/auth/register",
                 { name, email, password },
                 {
                     headers: {

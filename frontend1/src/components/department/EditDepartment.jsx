@@ -12,7 +12,7 @@ const EditDepartment = () =>{
             const fetchDepartments = async() => {
                 setDepLoading(true)
                 try{
-                    const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/department/${id}`, {
+                    const response = await axios.get(`https://gg-wb8q.onrender.com/api/department/${id}`, {
                         headers: {
                             "Authorization" : `Bearer ${localStorage.getItem('token')}` 
                         }
@@ -39,7 +39,7 @@ const EditDepartment = () =>{
       const handleSubmit = async(e) => {
         e.preventDefault()
         try{
-            const response = await axios.put(`https://gg-ten-cyan.vercel.app/api/department/${id}`, 
+            const response = await axios.put(`https://gg-wb8q.onrender.com/api/department/${id}`, 
                department, 
               {
                 headers: {

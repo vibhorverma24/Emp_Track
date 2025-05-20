@@ -10,7 +10,7 @@ const ViewEmp = () => {
     useEffect(() => {
         const fetchEmployee = async () => {
             try {
-                const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/employee/userID/${id}`, {
+                const response = await axios.get(`https://gg-wb8q.onrender.com/api/employee/userID/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -49,7 +49,7 @@ const ViewEmp = () => {
                     </div> */}
                     {employee.userId.profileImage ? (
                         <img
-                            src={`https://gg-ten-cyan.vercel.app/${employee.userId.profileImage}`}
+                            src={`https://gg-wb8q.onrender.com/${employee.userId.profileImage}`}
                             alt="Profile"
                             className="w-32 h-32 rounded-full object-cover border-2 border-gray-300 shadow"
                         />
@@ -107,7 +107,7 @@ export default ViewEmp;
 //     useEffect(() => {
 //         const fetchEmployee = async () => {
 //             try {
-//                 const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/employee/${id}`, {
+//                 const response = await axios.get(`https://gg-wb8q.onrender.com/api/employee/${id}`, {
 //                     headers: {
 //                         "Authorization": `Bearer ${localStorage.getItem('token')}`
 //                     }
@@ -137,7 +137,7 @@ export default ViewEmp;
 //             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 //                 <div>
 //                     <img
-//                         src={`https://gg-ten-cyan.vercel.app/${employee?.userId?.profileImage}`}
+//                         src={`https://gg-wb8q.onrender.com/${employee?.userId?.profileImage}`}
 //                         className="rounded-full border w-72"
 //                         alt="Profile"
 //                     />

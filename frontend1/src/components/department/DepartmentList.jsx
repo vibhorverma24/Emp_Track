@@ -16,7 +16,7 @@ const DepartmentList = () =>{
     const fetchDepartments = async() => {
         setDepLoading(true)
         try{
-            const response = await axios.get('https://gg-ten-cyan.vercel.app/api/department', {
+            const response = await axios.get('https://gg-wb8q.onrender.com/api/department', {
                 headers: {
                     "Authorization" : `Bearer ${localStorage.getItem('token')}` 
                 }

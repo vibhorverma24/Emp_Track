@@ -10,7 +10,7 @@ const Detail = () => {
     useEffect(() => {
         const fetchLeave = async() => {
             try{
-                const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/leave/detail/${id}`, {
+                const response = await axios.get(`https://gg-wb8q.onrender.com/api/leave/detail/${id}`, {
                     headers: {
                         "Authorization" : `Bearer ${localStorage.getItem('token')}` 
                     }
@@ -29,7 +29,7 @@ const Detail = () => {
 
     const changeStatus = async(id,status)=>{
         try{
-            const response = await axios.put(`https://gg-ten-cyan.vercel.app/api/leave/${id}`,{status}, {
+            const response = await axios.put(`https://gg-wb8q.onrender.com/api/leave/${id}`,{status}, {
                 headers: {
                     "Authorization" : `Bearer ${localStorage.getItem('token')}` 
                 },
@@ -53,7 +53,7 @@ const Detail = () => {
             <div className = "grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <img 
-                    src={`https://gg-ten-cyan.vercel.app/${leave.employeeId.userId.profileImage}`} 
+                    src={`https://gg-wb8q.onrender.com/${leave.employeeId.userId.profileImage}`} 
                     className="rounded-full border w-72"
                     />
                 </div>

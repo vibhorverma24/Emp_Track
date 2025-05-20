@@ -18,7 +18,7 @@ const AttendanceReport = () => {
             if (dateFilter) {
                 query.append("date", dateFilter);
             }
-            const response = await axios.get(`https://gg-ten-cyan.vercel.app/api/attendance/report?${query.toString()}`, {
+            const response = await axios.get(`https://gg-wb8q.onrender.com/api/attendance/report?${query.toString()}`, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`,
                 }

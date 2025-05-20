@@ -37,7 +37,7 @@
 //         e.preventDefault()
 
 //         try {
-//             const response = await axios.post(`https://gg-ten-cyan.vercel.app/api/salary/add`, 
+//             const response = await axios.post(`https://gg-wb8q.onrender.com/api/salary/add`, 
 //             salary, {
 //                 headers: {
 //                     "Authorization": `Bearer ${localStorage.getItem('token')}`
@@ -222,7 +222,7 @@ const Add = () => {
 
         try {
             const response = await axios.post(
-                `https://gg-ten-cyan.vercel.app/api/salary/add`,
+                `https://gg-wb8q.onrender.com/api/salary/add`,
                 salary,
                 {
                     headers: {

@@ -18,7 +18,7 @@ const Attendance = () => {
         setLoading(true);
         setError("");
         try {
-            const response = await axios.get('https://gg-ten-cyan.vercel.app/api/attendance', {
+            const response = await axios.get('https://gg-wb8q.onrender.com/api/attendance', {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

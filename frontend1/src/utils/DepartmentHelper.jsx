@@ -25,7 +25,7 @@ export const DepartmentButtons = ({Id, onDepartmentDelete}) => {
         const confirm = window.confirm("Do you want to delete?")
         if(confirm){
         try{
-            const response = await axios.delete(`https://gg-ten-cyan.vercel.app/api/department/${id}`, {
+            const response = await axios.delete(`https://gg-wb8q.onrender.com/api/department/${id}`, {
                 headers: {
                     "Authorization" : `Bearer ${localStorage.getItem('token')}` 
                 }

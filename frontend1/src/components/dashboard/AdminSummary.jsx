@@ -10,7 +10,7 @@ const AdminSummary = () => {
     useEffect(()=>{
         const fetchSummary = async()=>{
             try{
-                const summary = await axios.get('https://gg-ten-cyan.vercel.app/api/dashboard/summary',{
+                const summary = await axios.get('https://gg-wb8q.onrender.com/api/dashboard/summary',{
                     headers: {
                         "Authorization" : `Bearer ${localStorage.getItem('token')}`
                     }

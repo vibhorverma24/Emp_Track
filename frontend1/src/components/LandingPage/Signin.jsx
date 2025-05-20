@@ -38,7 +38,7 @@ const Signin = ()=>{
 
     const handleSignin = async()=>{
         try{
-            const response = await  axios.post("https://gg-ten-cyan.vercel.app/api/auth/login",{
+            const response = await  axios.post("https://gg-wb8q.onrender.com/api/auth/login",{
                 email,
                 password
             })

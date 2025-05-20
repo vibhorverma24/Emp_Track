@@ -12,7 +12,7 @@ const AuthContext = ({ children }) => {
             try {
                 const token = localStorage.getItem("token");
                 if (token) {
-                    const response = await axios.get("https://gg-ten-cyan.vercel.app/api/auth/verify", {
+                    const response = await axios.get("https://gg-wb8q.onrender.com/api/auth/verify", {
                         headers: {
                             Authorization: `Bearer ${token}`,
                         },
